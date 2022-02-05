@@ -20,8 +20,13 @@ class LoginUser {
             }
             return nil
         } set {
-            UserDefaults.standard.set(try! JSONSerialization.data(withJSONObject:newValue.dictValues(), options: .fragmentsAllowed), forKey: "kUserDetails")
-            UserDefaults.standard.synchronize()
+            if newValue == nil {
+                UserDefaults.standard.removeObject(forKey: "kUserDetails")
+                UserDefaults.standard.synchronize()
+            } else {
+                UserDefaults.standard.set(try! JSONSerialization.data(withJSONObject: newValue.dictValues(), options: .fragmentsAllowed), forKey: "kUserDetails")
+                UserDefaults.standard.synchronize()
+            }
         }
     }
     
