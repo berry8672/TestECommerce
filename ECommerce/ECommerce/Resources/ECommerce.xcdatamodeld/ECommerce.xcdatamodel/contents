@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Banner" representedClassName="Banner" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Carousel" representedClassName="Carousel" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Discount" representedClassName="Discount" syncable="YES" codeGenerationType="class">
+        <attribute name="discount" optional="YES" attributeType="String"/>
+        <attribute name="product" optional="YES" attributeType="String"/>
+        <attribute name="userType" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <attribute name="userType" optional="YES" attributeType="Transformable"/>
+    </entity>
+    <elements>
+        <element name="Product" positionX="291.6209106445312" positionY="-205.9529724121094" width="128" height="103"/>
+        <element name="Banner" positionX="-8.75787353515625" positionY="-199.4578247070312" width="128" height="73"/>
+        <element name="Carousel" positionX="-7.6246337890625" positionY="-104.0468139648438" width="128" height="73"/>
+        <element name="Discount" positionX="317.4237060546875" positionY="-2.0594482421875" width="98.23779296875" height="88"/>
+        <element name="User" positionX="6.90313720703125" positionY="-36.798095703125" width="128" height="118"/>
+    </elements>
+</model>
