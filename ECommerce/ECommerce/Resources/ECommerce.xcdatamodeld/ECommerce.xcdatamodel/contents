@@ -9,7 +9,7 @@
         <attribute name="imageUrl" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Discount" representedClassName="Discount" syncable="YES" codeGenerationType="class">
-        <attribute name="discount" optional="YES" attributeType="String"/>
+        <attribute name="discount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="product" optional="YES" attributeType="String"/>
         <attribute name="userType" optional="YES" attributeType="String"/>
     </entity>
@@ -24,7 +24,7 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="username" optional="YES" attributeType="String"/>
-        <attribute name="userType" optional="YES" attributeType="Transformable"/>
+        <attribute name="userType" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="Product" positionX="291.6209106445312" positionY="-205.9529724121094" width="128" height="103"/>
